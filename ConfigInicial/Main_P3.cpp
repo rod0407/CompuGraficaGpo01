@@ -1,4 +1,4 @@
-//Previo3										Lopez Lopez Jose Rodrigo
+// Previo3										Lopez Lopez Jose Rodrigo
 //Fecha de entrega: 21 de Febrero de 2026		320098446
 
 #include<iostream>
