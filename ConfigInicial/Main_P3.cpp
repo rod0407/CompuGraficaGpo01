@@ -1,5 +1,5 @@
-//Previo3										Lopez Lopez Jose Rodrigo
-//Fecha de entrega: 21 de Febrero de 2026		320098446
+//Practica3										Lopez Lopez Jose Rodrigo
+//Fecha de entrega: 25 de Febrero de 2026		320098446
 
 #include<iostream>
 
@@ -18,7 +18,7 @@
 // Shaders
 #include "Shader.h"
 
-const GLint WIDTH = 1000, HEIGHT = 600;
+const GLint WIDTH = 1200, HEIGHT = 1200;
 
 
 int main() {
@@ -221,10 +221,10 @@ int main() {
 		glm::mat4 model=glm::mat4(1);
 		glm::mat4 view=glm::mat4(1);
 	
-	   view = glm::translate(view, glm::vec3(0.0f,0.0f,-12.0f));
-	   model = glm::translate(model, glm::vec3( 6.0f, 0.0f, 0.0f));
-	   model = glm::rotate( model, 0.5f, glm::vec3( 2.0f, 0.0f, 0.0f ) ); // use to compare orthographic and perspective projection
-		model = glm::scale(model, glm::vec3(1.0f, 3.0f, 1.0f));
+	   view = glm::translate(view, glm::vec3(0.0f,0.0f,-14.0f));
+	   //model = glm::translate(model, glm::vec3( 6.0f, 0.0f, 0.0f));
+	  // model = glm::rotate( model, 0.5f, glm::vec3( 2.0f, 0.0f, 0.0f ) ); // use to compare orthographic and perspective projection
+		//model = glm::scale(model, glm::vec3(1.0f, 3.0f, 1.0f));
 		//view = glm::translate( view, glm::vec3( screenWidth / 2, screenHeight / 3,-800.0f ) ); // use with orthographic projection
 		
 		GLint modelLoc = glGetUniformLocation(ourShader.Program, "model");
@@ -237,7 +237,7 @@ int main() {
 		
 
 		glBindVertexArray(VAO);
-		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glDrawArrays(GL_TRIANGLES, 0, 36);
 
 
 		//model = glm::mat4(1);
@@ -255,16 +255,42 @@ int main() {
 		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		//glDrawArrays(GL_TRIANGLES, 0, 36);
 
-
+		//Primer cubo
 		model = glm::mat4(1.0f);
-		model = glm::translate(model, glm::vec3(0.0f, 1.0f, 0.0f)); 
-		model = glm::scale(model, glm::vec3(4.0f, 0.2f, 4.0f));     
+		model = glm::translate(model, glm::vec3(0.0f, -4.0f, 0.0f)); 
+		model = glm::rotate(model, 30.0f, glm::vec3(1.0f, 1.0f, 1.0f));
+		model = glm::scale(model, glm::vec3(2.0f, 2.0f, 2.0f));     
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
 
+		//segundo cubo
+		model = glm::mat4(1.0f);
+		model = glm::translate(model, glm::vec3(0.0f, -0.35f, 0.0f));
+		model = glm::rotate(model, 30.0f, glm::vec3(1.0f, 0.0f, 0.0f));
+		model = glm::scale(model, glm::vec3(3.0f, 3.0f, 3.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
 
-		glm::vec3 posicionesPatas[] = {
+
+		//Tercer cubo
+		model = glm::mat4(1.0f);
+		model = glm::translate(model, glm::vec3(-2.0f, 1.48f, 0.0f));
+		model = glm::rotate(model, 30.0f, glm::vec3(1.5f, 2.0f, 0.5f));
+		model = glm::scale(model, glm::vec3(1.0f, 1.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+
+		//Cuarto cubo
+		model = glm::mat4(1.0f);
+		model = glm::translate(model, glm::vec3(-1.0f, 4.0f, 0.0f));
+		model = glm::rotate(model, 30.0f, glm::vec3(1.0f, 3.5f, 0.5f));
+		model = glm::scale(model, glm::vec3(3.5f, 3.5f, 3.5f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		/*glm::vec3 posicionesPatas[] = {
 			glm::vec3(-1.8f, 0.0f,  1.8f), 
 			glm::vec3(1.8f, 0.0f,  1.8f), 
 			glm::vec3(-1.8f, 0.0f, -1.8f), 
@@ -277,7 +303,7 @@ int main() {
 			model = glm::scale(model, glm::vec3(0.2f, 2.0f, 0.2f));
 			glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 			glDrawArrays(GL_TRIANGLES, 0, 36);
-		}
+		}*/
 
 
 		glBindVertexArray(0);
