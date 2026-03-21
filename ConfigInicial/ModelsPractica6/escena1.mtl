@@ -1,0 +1,113 @@
+# Blender 5.0.1 MTL File: 'Nature_Diorama.blend'
+# www.blender.org
+
+newmtl Boulder
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Boulders_512p_diffuseOriginal.png
+
+newmtl Bridge
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Bridge_512p_diffuseOriginal.png
+
+newmtl Grass
+Ns 0.328868
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Grass_1k_diffuseOriginal.png
+
+newmtl Leaf_Plant
+Ns 39.999996
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Plants_512p_diffuseOriginal.png
+
+newmtl Post_Paint
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Wooden-Post_512p_diffuseOriginal.png
+
+newmtl RedDog_Red_Dog_Default
+Ns 39.999996
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 0.000000
+illum 9
+map_Kd Texture_albedo.jpg
+
+newmtl Rock
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd textures/Rocks_512p_diffuseOriginal.png
+map_Ns textures/Rocks_512p_smoothness.png
+
+newmtl Rope.003
+Ns 2.500001
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Rope_512p_diffuseOriginal.png
+
+newmtl Stepping_Stone
+Ns 4.049587
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Stones_512p_diffuseOriginal.png
+
+newmtl Stump_Wood
+Ns 9.111576
+Ka 1.000000 1.000000 1.000000
+Ks 0.050000 0.050000 0.050000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Tree_Stump-512p_diffuseOriginal.png
+
+newmtl Water
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+map_Kd textures/Water_512p.png
+illum 2
